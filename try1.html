@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+
+        <link rel="stylesheet" href="css/style.css" />
+        <style>
+		ul 
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			font-size:25px;
+			top: 0;
+			width: 100%;
+			
+		}
+
+		li 
+		{
+			float: left;
+		}
+
+		li a 
+		{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover 
+		{
+			background-color: white;
+			text-decoration: none;
+			color: blue;
+		}
+		form
+		{
+		        border: 3px solid #f1f1f1 ;
+			padding-top: 30px ;
+			padding-right:50px ;
+			padding-bottom: 20px ;
+			padding-left: 50px ;
+			background-color: white ;
+			margin:60px ;
+		
+		}
+		body
+		{
+		        background-image: url(../loginback.jpg) ;
+			font-family: "Raleway", sans-serif;
+		}
+		.button 
+		{
+		    background-color: red; 
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    cursor: pointer;
+		    border-radius:12px;
+		 }
+      </style>
+    </head>
+    <body>
+
+	<nav class="navbar">
+		  <div class="container-fluid">
+				<ul class="nav navbar-nav nav-pills navbar-inverse">
+				    <li><a href="Home.php"><img src="../img/Mlingo.png" style="width:50px;height:50px; ></a></li>
+					<li><a href="Home.php">MLINGO</a></li>
+					<li><a href="Action.php"><h4>ACTION</h4></a></li>
+					<li><a href="Romantic.php"><h4>ROMANTIC</h4></a></li>
+					<li><a href="Trailer.php"><h4>Trailers</h4></a></li>
+					<li><a href="Songs.php"><h4>Songs</h4></a></li>
+					<li><a href="Newsfeed.php"><h4>Trending Now!</h4></a></li>			
+				
+				</ul>
+		  </div>
+		</nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                  
+                    <form action="register.php" method="post" class="form-horizontal">
+                          <h1 align="center">Sign Up!</h1>
+                        <div class="form-group ">
+                            <label class="control-label">First Name:</label>
+                            <input name="FName" type="text" class="form-control" placeholder="First Name" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Last Name:</label>
+                            <input name="LName" type="text" class="form-control text-line" placeholder="Last Name"/>
+                        </div>
+			<div class="form-group ">
+                            <label class="control-label">Age:</label>
+                            <input name="Age" type="text" class="form-control" placeholder="Age"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Email:</label>
+                            <input name="Email" type="email" class="form-control text-line"  placeholder="Email Adress" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Password:</label>
+                            <input name="PWD" type="password"  class="form-control text-line" placeholder="Password" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Location:</label>
+                            <input name="Location" type="text" class="form-control text-line" placeholder="Location"/>
+                        </div>
+                        
+                        <input type="submit" class="button" name="submit" value="Sign Up">
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+       
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

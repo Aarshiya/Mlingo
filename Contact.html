@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact With Us</title>
+		
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			 <link rel="stylesheet" href="css/style.css" />
+			 <style>
+			 ul 
+			{
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				font-size:25px;
+				top: 0;
+				width: 100%;
+				
+			}
+
+			li 
+			{
+				float: left;
+			}
+
+			li a 
+			{
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+			li a:hover 
+			{
+				background-color: #111;
+			}
+			/* Style inputs with type="text", select elements and textareas */
+			input[type=text], select, textarea {
+				width: 100%; /* Full width */
+				padding: 12px; /* Some padding */  
+				border: 1px solid #ccc; /* Gray border */
+				border-radius: 4px; /* Rounded borders */
+				box-sizing: border-box; /* Make sure that padding and width stays in place */
+				margin-top: 6px; /* Add a top margin */
+				margin-bottom: 16px; /* Bottom margin */
+				resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+			}
+
+			/* Style the submit button with a specific background color etc */
+			input[type=submit] {
+				background-color: #4CAF50;
+				color: white;
+				padding: 12px 20px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+
+			/* When moving the mouse over the submit button, add a darker green color */
+			input[type=submit]:hover {
+				background-color: #45a049;
+			}
+
+			body
+			{
+					background-image: url("loginback.jpg") ;
+				font-family: "Raleway", sans-serif;
+			}
+			form
+			{
+				border: 3px solid #f1f1f1 ;
+				padding-top: 30px ;
+				padding-right:50px ;
+				padding-bottom: 20px ;
+				padding-left: 50px ;
+				background-color: white ;
+				margin:30px 30px 30px 30px ;
+			
+			}
+		</style>
+	</head>
+	<body>
+	 <div class="container-fluid">
+			<ul class="nav navbar-nav nav-pills">
+				    <li><a href="Home.php"><img src="../img/Mlingo.png" style="width:50px;height:50px; ></a></li>
+					<li><a href="Home.php">MLINGO</a></li>
+					<li><a href="Action.php"><h4>ACTION</h4></a></li>
+					<li><a href="Romantic.php"><h4>ROMANTIC</h4></a></li>
+					<li><a href="Trailer.php"><h4>Trailers</h4></a></li>
+					<li><a href="Songs.php"><h4>Songs</h4></a></li>
+					<li><a href="Newsfeed.php"><h4>Trending Now!</h4></a></li>
+			</ul>
+		</div>
+			   <div class="container">
+			   <div class="col-md-2"></div>
+					<div class="col-md-8">
+					  <form action="/action_page.php">
+					  		<h2 align="center">Let's Talk!</h2>
+
+							<label for="fname">First Name</label>
+							<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+							<label for="lname">Last Name</label>
+							<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+							<label for="country">Country</label>
+							<select id="country" name="country">
+							  <option value="India">India</option>
+							  <option value="australia">Australia</option>
+							  
+							  <option value="usa">USA</option>
+							</select>
+
+							<label for="subject">Subject</label>
+							<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+							<input type="submit" value="Submit">
+
+					  </form>
+					</div>
+				</div>
+			<div class="col-md-2"></div>	
+	</body>
+</html>

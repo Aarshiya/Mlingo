@@ -1,0 +1,153 @@
+<?php
+session_start();?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advertise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+
+        <link rel="stylesheet" href="css/style.css" />
+        <style>
+		ul 
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			font-size:25px;
+			top: 0;
+			width: 100%;
+			
+		}
+
+		li 
+		{
+			float: left;
+		}
+
+		li a 
+		{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover 
+		{
+			background-color: #111;
+		}
+		form
+		{
+		        border: 3px solid #f1f1f1 ;
+			padding-top: 30px ;
+			padding-right:50px ;
+			padding-bottom: 20px ;
+			padding-left: 50px ;
+			background-color: white ;
+			margin:60px ;
+		
+		}
+		body
+		{
+		    background-image: url("loginback.jpg") ;
+			font-family: "Raleway", sans-serif;
+			background-position: fixed;
+		}
+		.button 
+		{
+		    background-color: red; 
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    cursor: pointer;
+		    border-radius:12px;
+		 }
+      </style>
+    </head>
+    <body>
+
+	<div class="container-fluid">
+			<ul class="nav navbar-nav nav-pills">
+				    <li><a href="Home.php"><img src="../img/Mlingo.png" style="width:50px;height:50px; ></a></li>
+					<li><a href="Home.php">MLINGO</a></li>
+					<li><a href="Action.php"><h4>ACTION</h4></a></li>
+					<li><a href="Romantic.php"><h4>ROMANTIC</h4></a></li>
+					<li><a href="Trailer.php"><h4>Trailers</h4></a></li>
+					<li><a href="Songs.php"><h4>Songs</h4></a></li>
+					<li><a href="Newsfeed.php"><h4>Trending Now!</h4></a></li>
+				<div class="navbar-right">				
+				</div>
+	
+			</ul>
+		</div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                  
+                    <form action="Advertise.php" method="post" class="form-horizontal" enctype="multipart/form-data">
+                          <h2 align="center">Advertise</h2>
+                        <div class="form-group ">
+                            <label class="control-label">Company:</label>
+                            <input name="Company" type="text" class="form-control" placeholder="Enter Company"/>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label">Ad-Type:</label><br>
+							<input type="radio" name="Ad_Type" value="Image">Image Advertise<br>
+					<!--	<input type="radio" name="Ad_Type" value="Video">Video Advertise<br>	-->
+							<input type="radio" name="Ad_Type" value="Text">Text Advertise<br>
+                        </div>
+						<div class="form-group">
+                            <label class="control-label">Duration:</label>
+                            
+							<input type="radio" name="Duration" value="15">15 Days<br>
+							<input type="radio" name="Duration" value="30">30 Days<br>
+							<input type="radio" name="Duration" value="60">60 Days<br>
+							
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Advertiser:</label>
+                            <input name="Advertiser" type="text" class="form-control text-line" placeholder="Advertiser"/>
+                        </div>
+						<div class="form-group">
+                            <label class="control-label">Contact-1:</label>
+                            <input name="Contact_1" type="text" class="form-control text-line" placeholder=" Enter 10digit Contact Number"/>
+                        </div>
+						<div class="form-group">
+                            <label class="control-label">Contact-2:</label>
+                            <input name="Contact_2" type="text" class="form-control text-line" placeholder=" Enter 10digit Contact Number"/>
+                        </div>
+						<div class="form-group">
+                            <label class="control-label">Email:</label>
+                            <input name="Email" type="Email" class="form-control text-line" placeholder=" Email"/>
+                        </div>
+                       
+                      
+                        <input type="submit" class="button" name="submit" value="Add Info">
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+       
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

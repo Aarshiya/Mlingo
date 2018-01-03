@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+		ul 
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			font-size:25px;
+			top: 0;
+            height: 100%;
+            position: fixed;
+			
+		}
+
+		li 
+		{
+			float: left;
+		}
+
+		li a 
+		{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover 
+		{
+			background-color: #111;
+		}
+		form
+		{
+		    border: 3px solid #f1f1f1 ;
+			padding-top: 30px ;
+			padding-right:50px ;
+			padding-bottom: 20px ;
+			padding-left: 50px ;
+			background-color: white ;
+			margin:60px ;
+		
+		}
+		body
+		{
+		    background-color: black;
+			font-family: "Raleway", sans-serif;
+		}
+
+        .background
+        {
+            position: sticky;
+            z-index: 1000;
+        }
+		.button 
+		{
+		    background-color: red; 
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    cursor: pointer;
+		    border-radius:12px;
+		 }
+
+         .video_background {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1000;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+      </style>
+    </head>
+    <body>
+        
+    
+        <div class="container-fluid background">
+            <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                  <li class="active"><a href="Admin.html">Home</a></li>
+                  <li><a href="DisplayMovies.php">MOVIES</a></li>
+                  <li><a href="DisplayRatings.php">ALL RATINGS</a></li>
+                  <li><a href="DisplayUsers.php">USERS</a></li>
+                  <li><a href="DisplayAdvertisers.php">ADVERTISERS</a></li>
+                  <li><a href="InsertMovie.html">INSERT MOVIE</a></li>
+				  <li><a href="InsertNews.html">INSERT NEWS</a></li>
+                  <li><a href="LogOut.php">LOG OUT</a></li>
+                </ul>
+            </div>
+                <div class="col-md-8">
+                    <form action="InsertNews.php" method="post" class="form-horizontal" enctype="multipart/form-data">
+                        <h1 align="center">Insert News</h1>
+                        
+			            <div class="form-group ">
+                            <label class="control-label">Image:</label>                                
+                            <input type="file" name="fileToUpload" id="fileToUpload">
+                        </div>
+                         <div class="form-group ">
+                            <label class="control-label">News:</label><br>                                
+                            <textarea type="text" name="News" col=40 rows="4" placeholder="(300 chararcter)"></textarea>  
+                        </div>
+                        
+                        <input type="submit" class="button" name="submit" value="Enter">
+                    </form>
+                </div>
+            <div class="col-md-1"></div>
+        </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
